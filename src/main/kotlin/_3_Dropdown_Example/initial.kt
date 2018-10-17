@@ -9,16 +9,13 @@ fun buildDropdown() = createHTML().div(classes = "dropdown") {
         span(classes = "caret")
     }
     ul(classes = "dropdown-menu") {
-        item("#", "Action")
+        li { a("#") { + "Action" } }
         li { a("#") { +"Another action" } }
         li { role = "separator"; classes = setOf("divider") }
         li { classes = setOf("dropdown-header"); +"Header" }
         li { a("#") { +"Separated link" } }
     }
 }
-
-fun UL.item(url: String, name: String) =
-    li { a(url) { +name } }
 
 fun main(args: Array<String>) {
     println(buildDropdown())
