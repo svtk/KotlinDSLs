@@ -1,7 +1,5 @@
 package _1_lambda_with_receiver
 
-import java.lang.StringBuilder
-
 fun main(args: Array<String>) {
     val s = buildString {
         appendln("Alphabet:")

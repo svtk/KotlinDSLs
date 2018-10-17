@@ -18,7 +18,7 @@ fun buildDropdown() = createHTML().div(classes = "dropdown") {
 }
 
 fun UL.item(url: String, name: String) =
-        li { a(url) { +name } }
+    li { a(url) { +name } }
 
 fun main(args: Array<String>) {
     println(buildDropdown())

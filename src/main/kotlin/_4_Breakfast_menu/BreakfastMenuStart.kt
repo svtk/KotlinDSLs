@@ -16,8 +16,8 @@ fun main(args: Array<String>) {
 data class BreakfastMenu(val items: List<BreakfastMenuItem>)
 
 data class BreakfastMenuItem(
-        val name: String,
-        val description: String,
-        val price: Double,
-        val calories: Int
+    val name: String,
+    val description: String,
+    val price: Double,
+    val calories: Int
 )
